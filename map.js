@@ -34,11 +34,7 @@ var pennsylvaniaData = [
   [42.252649, -79.76278],
 ];
 
-var map = L.map("mapid", {
-  dragging: !L.Browser.mobile,
-  tap: !L.Browser.mobile,
-  touchZoom: !L.Browser.mobile,
-}).setView([41.2033, -77.1945], 6);
+var map = L.map("mapid", {}).setView([41.2033, -77.1945], 6);
 
 L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
   attribution: '&copy; <a href="https://publicherald.org/">Public Herald</a>',
